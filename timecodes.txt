@@ -1,0 +1,355 @@
+# 0610000000   RD DEV-UNSPECIFIED TIME For administrative tasks, like the peer
+#                                      reviews and filling out time cards   
+#                                      
+# 0610700003   RD DEV-DEVELOPMENT      Normal development work on features and
+#                                      stuff  
+#                                      
+# 0610700007   RD DEV-QA               Regression tests (for QA), other sorts
+#                                      of non-specific testing (JBOSS touch
+#                                      every screen testing)  
+#                                      
+# 0610700008   RD DEV-PRODUCTION SUPPORT  Production CRs, as long as they're
+#                                      production CRs interrupting other work 
+#
+# 0610700024   RD DEV-DEVELOPMENT SR   Even if what you're working on isn't
+#                                      explicitly targetted for an SR, but
+#                                      it's not scheduled feature development,
+#                                      and not production CRs  
+#                                      
+# 0610900001   RD DEV-TEAM MEETING     Administrative meetings (e.g.,
+#                                      generalized team, group meetings), not
+#                                      specifically related to a feature or a
+#                                      CR or some such 
+#
+# 0610900003   RD DEV-HOLIDAY          To account for full work week, enter a
+#                                      full day for Company holidays 
+#
+# 0610900004   RD DEV-PTO              Personal Time Off - sick days and
+#                                      vacation days 
+#
+# 0610900005   RD DEV-FLOATING HOLIDAY Record when you take your floating
+#                                      holidays 
+#
+# 0610900008   RD DEV-EMPLOYEE TRAINING   Reading, investigations, formal
+#                                      training? 
+
+# --------------------------  Not charged  ---------------------------
+
+0000000000 lunch in
+0000000000 personal in
+0000000000 surf in
+
+# ----------------------------  Travel  ----------------------------
+
+0610900000 CCOW in travel
+
+# ----------------------------  Training  ----------------------------
+
+0610900008 training \bin\b
+0610900008 JsfTalk
+
+# -------------------------  R5.1 sr4 maint  -------------------------
+
+530993004I 16720-PerformanceProblemDueToTooManyDBConnections
+530993004I settleIn_R5.1sr4
+530993004I possibleDeadlockInCanopy in produceGraphVizGraph
+530993004I encounterADTTypeNotSaving
+
+# --------------------------  R5.1 sr5 dev  --------------------------
+
+530993005I settleIn_R5.1sr5
+530993005I ECIN in mrnLeadingZerosIssue
+530993005I 16868-CannotEditR/CTask
+
+# --------------------------  R5.1 sr6 dev  --------------------------
+
+530993006I preAdmitMgmt
+530993006I R5.1sr6 in meeting
+530993006I EcinPasswdSynch
+
+# -----------------------  Production Support  -----------------------
+0610700008 productionProblem in\b
+0610700008 scriptDebugging
+0610700008 responseAlreadyCommittedError
+0610700008 providerLink df
+0610700008 clientServicesSelfSupport
+0610700008 himarkInterface in downInProduction
+0610700008 14616-Q2VcaNotVisible
+0610700008 connectionPoolConfigQuestion
+0610700008 helpChristopher
+0610700008 14796-JSFerrorOnVCAAdmin
+0610700008 14791-capitalExtract
+0610700008 14741-NPEonPtEncounterList
+0610700008 14796-JSFerrorOnVCAAdmin
+0610700008 14777-spellcheck
+0610700008 14805-QmdsThrowingClassCastException
+0610700008 userAccountAddButtonLocked
+0610700008 14855-MoreSpellCheckWords
+0610700008 autoPlotOverview
+0610700008 helpCalvin
+0610700008 13687-GarbledDcRpt
+0610700008 qmissue
+0610700008 15341-exceptionCreatingProviderQuestion
+0610700008 15524-WellstarVCAquestionsInactivated
+0610700008 postR5.1defects
+0610700008 15742-SessionMgrNotCleaningUpCompletely
+0610700008 JavascriptErrorsInShowHiddenUntilLoaded
+0610700008 D/CrptDeletedAssessmentRemains
+0610700008 locksHeldTooLong
+0610700008 cmeInEcinProcessor
+0610700008 duplicateInserts
+0610700008 16380-garbledDCRpt
+0610700008 possibleDeadlockInCanopy
+0610700008 productionIncident in
+
+# -------------------------  SR Development  -------------------------
+0610700024 \bR(\.|\d)+-SR\d+ in\b
+0610700024 cr11051
+0610700024 scopeAndObjectives
+0610700024 printableEncounterList
+0610700024 11728-AsyncVersionLiftFailure in
+0610700024 SRReview
+0610700024 cr12607-NPEinQM.JspHelper
+0610700024 R5.0sr6
+0610700024 14073-PermanentMessageOnQMExtractSetup.jsp
+0610700024 14156-ExtractSetupSaveButtonNotWorking
+0610700024 14175-OptionLabelNotPublished
+0610700024 abxDataTimeUTD
+0610700024 mhaExtract
+0610700024 13793-MultiplePeriodExtracts
+0610700024 QM-Phase2-sr5
+0610700024 14177-UTDbuttonOnAbxTime
+0610700024 14201-ExtractJobsOnWrongAppServer
+0610700024 13901-spellCheck
+0610700024 14202-GreyScreenWithSCIPvca
+0610700024 14359-BlankTimeSansUTDShouldTriggerError
+0610700024 14360-dcPlanPDFNotDisplaying
+0610700024 14201-ExtractJobsOnWrongAppServer
+0610700024 14213-QuotesInPayorPlanLabel
+0610700024 14349-RenderUTDTimeOnAbxAsBlank
+0610700024 14200-SR5-GreyScreenOnSCIP
+0610700024 ClinicalReviewCriteriaMet
+0610700024 adHocReporting
+0610700024 abxDiscardCR
+0610700024 14371-DecimalPointInIntegerAnswers
+0610700024 14339-scipSlow
+0610700024 vcaExtract
+0610700024 webload
+0610700024 facesErrorOnVcaList
+0610700024 compareCrs13784,14431
+0610700024 emailToNathanReNewAdHocIntegrationFiles
+0610700024 14535-adHocReportMerge
+0610700024 srBuild
+0610700024 14567-unclosedSqlStmts
+0610700024 14564-merge-sr7.2-b1-into-r5.0-trunk
+0610700024 helpDavid in abxExtract
+0610700024 14764-spellingDictionaryLocnForDeployment
+0610700024 14765-CharacterEncodingForCompile
+0610700024 sr8 in deadBuild-cleanupOpsTest2-D:
+0610700024 14735-ActuateCookiesInLogin
+0610700024 mhaParallelTesting
+0610700024 r5.0-sr8
+0610700024 actuateCookieAndProfilingTool
+0610700024 sr8-helpTheresa
+0610700024 dateUtd
+0610700024 cms/jcahoExtractSetup
+0610700024 compareMhaExtractComparison
+0610700024 14903-SkipLogicApparentlyLost
+0610700024 14988-PlanMemberLoaderNameLength
+0610700024 roxDeployProcess
+0610700024 14979-VCA-list-locked-by-publishing-in-other-domain
+0610700024 abilityToSaveLockedVCAs
+0610700024 PmsExtractSetup
+0610700024 15077-skipLogicMiscoding
+0610700024 15160-utdDateTime
+0610700024 IE7-issues
+0610700024 cascadingSelect2dryRequired
+0610700024 15541-LogPOSTparameters
+0610700024 configurableScreens
+0610700024 buildAndDeployProblem
+0610700024 15688-PtBannerJspCompileProblem
+0610700024 15709-MahasSearchFormLabelDivNotWorking
+0610700024 15697-VersionWrongInAboutCanopy
+0610700024 R5.1SR3
+0610700024 16057-ErrorCreatingExtract
+0610700024 Cocoon
+0610700024 16057-JSFErrorOnExtractParamPopup
+0610700024 R5.1sr3.1
+0610700024 jspell in addWords
+0610700024 15270-JspellDictionaryUpdate
+0610700024 procedureCodes
+
+# ----------------------------  Meeting  -----------------------------
+0610900001 meeting in
+0610900001 statusUpdate
+0610900001 presentation in canopyFuture 2007
+0610900001 WIGs in
+0610900001 retrospective
+
+# --------------------------  Development  ---------------------------
+0610700003 Java rs
+0610700003 (JBoss|JSF|QM) (in|rs|ds|df|te|pm)\b
+0610700003 QM-Phase2 (in|rs|ds|df|pm)\b
+0610700003 (settleIn|slashdot|java\.net|java\.forums) (in|rs)\b
+0610700003 (tool|wiki) in\b
+0610700003 CogScopeRemoval (in|ds)\b
+0610700003 CogScopeRemoval (in|ds)\b
+0610700003 ConfigMgmt in\b
+0610700003 ConfigMgmt in\b
+0610700003 EDAC
+0610700003 admin in workstationBackups
+0610700003 admin in workstationBackups
+0610700003 assertions in\b
+0610700003 betterUILayout ds\b
+0610700003 betterUILayout ds\b
+0610700003 cr10368 in
+0610700003 email in\b
+0610700003 toolsmith in\b
+0610700003 researchForFutureUse rs\b
+0610700003 \bcr[0-9]+-[a-z0-9_-]+
+0610700003 tool .* eclipse
+0610700003 nonworkTechnicalWork
+0610700003 TSSarticlesOnComments,Naming
+0610700003 alcindasHijackOnLoginProblem
+0610700003 R4.0.2 in verifyFixedCRs
+0610700003 ED in presentation
+0610700003 helpMaha
+0610700003 \bds review\b
+0610700003 infrastructure in\b
+0610700003 genericWarnings in\b
+0610700003 12046-InactiveClinicalAreaCausesStacktrace
+0610700003 JSF1.2/JSP2.1-DynamicAttributesTags
+0610700003 toolsearch in\b
+0610700003 spellchecker rs\b
+0610700003 symposium in\b
+0610700003 tomahawk.jar-deployment in
+0610700003 stacktraceSignature in perlScript
+0610700003 JProfiler in install,play
+0610700003 javaEnumsAndSwitchStmt rs
+0610700003 infrastructure rs syncMethodsInLogin/ObjBroker
+0610700003 helpMark in discussOOconcepts
+0610700003 designPatterns rs forMaha
+0610700003 reportingDB
+0610700003 QM-Phase2 (in|df|te|pm)\b
+0610700003 cacheBrainStorm
+0610700003 cache\b
+0610700003 helpBarbara in titlePathTruncationLength
+0610700003 containerManagedSecurity (rs|in)\b
+0610700003 AdmittingResource
+0610700003 ED-integration
+0610700003 deployBrainstorm
+0610700003 extractScheduling
+0610700003 PerFacilityDRGBenchmarks
+0610700003 \buiEnhancements\b
+0610700003 dbPerfTuning in questionFromPhilip
+0610700003 spellcheck (rs|in)\b
+0610700003 opensourceLicensing in\b
+0610700003 jspCompilationException in
+0610700003 13563-DownloadButtonHardcoded
+0610700003 dischargeProgress 
+0610700003 work
+0610700003 canopyRedesign
+0610700003 CCOW
+0610700003 VCAVersionMaintenanceStrategy
+0610700003 15040-IncludeROXfilesInBuild
+0610700003 newSearchFunctionality
+0610700003 \bdenials\b
+0610700003 providerQuestionType
+0610700003 buildRequest
+0610700003 helpQA
+0610700003 15562-csiSupportLoginUnitTest
+0610700003 unitTest
+0610700003 MultisystemDRG
+0610700003 DRGbenchmarks
+0610700003 discussQASharingDesktopWithMahaForSupport
+0610700003 ProviderLinkReplacement
+0610700003 16424-makeDRGfilterConversionStick
+0610700003 16448-DRGCriteriaPopupWrong
+0610700003 helpDavid in withFaces
+
+# -----------------------  Unspecified/Admin  ------------------------
+
+0610000000 downloadInstall
+0610000000 workstationPerformance
+0610000000 socialize
+0610000000 reboot
+# give BLOOD (typo)
+0610000000 giveBlock
+0610000000 giveBlood
+0610000000 meeting in canopyUnit
+0610000000 \badmin in\b
+0610000000 install/config in\b
+0610000000 iconUsage rs
+0610000000 javadoc in brokenBuild
+0610000000 ajaxFrameworks rs
+0610000000 lunch-n-learn rs reportingDB
+0610000000 chairMassage in
+0610000000 backupScriptsToJoey
+0610000000 JSF-divTag rs
+0610000000 canopyRoadShow
+0610000000 helpMark
+0610000000 buttonStyles
+0610000000 rsync rs
+0610000000 defectReduction
+0610000000 HabitatForHumanityKickoff
+0610000000 configMgmt in\b
+0610000000 helpDamian in\b
+0610000000 linuxBuild in\b
+0610000000 buildFromTipCM
+0610000000 StarTeam rs\b
+0610000000 helpShaun in\b
+0610000000 ClassesWithoutVersionStamps
+0610000000 QM-FAQ
+0610000000 helpHope in StarTeam
+0610000000 14580-configDataMgmt
+0610000000 TinyMCE
+0610000000 rcrepo-buildServer
+0610000000 innerClassVisibility
+0610000000 toolsearch
+0610000000 srlet-deployProcedure
+0610000000 User'sConference
+0610000000 meetWithMark
+0610000000 deployProcess
+0610000000 buildOnUnix
+0610000000 bugTrackerSystem
+0610000000 helpJamie
+0610000000 jafarOutOfSpace
+0610000000 jprofiler
+0610000000 StarTeam
+0610000000 TestNG
+0610000000 sourceForge in expenses
+0610000000 postmodernProgramming
+0610000000 emailAfterVacation
+0610000000 donateBlood
+0610000000 PO in MyEclipse
+0610000000 agileMethodology rs
+0610000000 R5.1sr4 in juggleCRs
+0610000000 GWT rs
+0610000000 sdlcProcess
+0610000000 priForm
+0610000000 TeamConnect,VirtualPC,WysiwygWiki
+0610000000 interviewQuestions
+0610000000 VersionOne in
+0610000000 VersionOne
+0610000000 interview in
+
+# ------------------------------  PTO  -------------------------------
+
+9600900004 \bPTO\b in\b
+9600900004 \bpto\b in\b
+
+# -----------------  Charitable Service Day Project  -----------------
+
+0630900027 charityPTO
+
+# ----------------------------  Holiday  -----------------------------
+
+0610900003 \bholiday\b
+
+# ------------------------------  ECIN  ------------------------------
+
+0210000000 ECIN-integration
+0210000000 SS/TLD-integration
+0210000000 TeamIndia in prep
+0210000000 interview in TeamIndiaCandidates
+0210000000 interview in RaviKumar
